@@ -28,20 +28,8 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/Pages/Expenses.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXhwZW5zZXMucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/Pages/Weather.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/_Imports.razor]

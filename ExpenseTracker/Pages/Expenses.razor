@@ -1,9 +1,9 @@
-@page "/expenses"
 @using ExpenseTracker.Models
 @using ExpenseTracker.Services
+@page "/expenses"
 @inject FirebaseService Firebase
 
-<h3>Expense Tracker</h3>
+<h3 class="page-title">All Expenses</h3>
 
 <ul>
     @foreach (var expense in expenses)

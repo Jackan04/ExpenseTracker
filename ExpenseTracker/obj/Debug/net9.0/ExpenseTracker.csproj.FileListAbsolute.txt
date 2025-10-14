@@ -199,8 +199,6 @@
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/wwwroot/_framework/icudt_CJK.tjcz0u77k5.dat
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/wwwroot/_framework/icudt_EFIGS.tptq2av103.dat
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/wwwroot/_framework/icudt_no_CJK.lfu7j35m59.dat
-/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/wwwroot/_framework/ExpenseTracker.klj8er8k08.wasm
-/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/wwwroot/_framework/ExpenseTracker.5l0i1lsil5.pdb
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/wwwroot/_framework/blazor.webassembly.js.gz
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/wwwroot/_framework/Microsoft.AspNetCore.Authorization.tnyc7xpluy.wasm.gz
@@ -403,8 +401,6 @@
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/wwwroot/_framework/icudt_CJK.tjcz0u77k5.dat.gz
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/wwwroot/_framework/icudt_EFIGS.tptq2av103.dat.gz
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/wwwroot/_framework/icudt_no_CJK.lfu7j35m59.dat.gz
-/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/wwwroot/_framework/ExpenseTracker.klj8er8k08.wasm.gz
-/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/wwwroot/_framework/ExpenseTracker.5l0i1lsil5.pdb.gz
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/wwwroot/_framework/blazor.boot.json.gz
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/ExpenseTracker.staticwebassets.runtime.json
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/ExpenseTracker.staticwebassets.endpoints.json
@@ -818,7 +814,6 @@
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/scopedcss/projectbundle/ExpenseTracker.bundle.scp.css
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/blazor.build.boot-extension.json
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/blazor.boot.json
-/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/compressed/q2bqkaeyjf-xd83rnx73q.gz
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/compressed/iedfnekc1d-pvtpbsnjm6.gz
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/compressed/bxor5bdkaq-bqjiyaj88i.gz
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/compressed/rgqid8mc81-c2jlpeoesf.gz
@@ -1068,9 +1063,6 @@
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/compressed/1k0fbgb8ml-tjcz0u77k5.gz
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/compressed/sh41kzw1kj-tptq2av103.gz
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/compressed/bo0p1k47t3-lfu7j35m59.gz
-/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/compressed/eusmr96iyl-klj8er8k08.gz
-/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/compressed/n6conud0rh-5l0i1lsil5.gz
-/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/compressed/emlgxkiyv5-rdbyme2o50.gz
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/staticwebassets.build.json
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/staticwebassets.build.json.cache
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/staticwebassets.development.json
@@ -1080,3 +1072,13 @@
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/refint/ExpenseTracker.dll
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/ExpenseTracker.pdb
 /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/ref/ExpenseTracker.dll
+/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/wwwroot/_framework/ExpenseTracker.ppyu591u5z.wasm
+/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/wwwroot/_framework/ExpenseTracker.h45aj5iuvm.pdb
+/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/wwwroot/_framework/ExpenseTracker.ppyu591u5z.wasm.gz
+/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/bin/Debug/net9.0/wwwroot/_framework/ExpenseTracker.h45aj5iuvm.pdb.gz
+/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/ExpenseTracker.sourcelink.json
+/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/compressed/q2bqkaeyjf-ut1ds74j5x.gz
+/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/compressed/6is8ceelcm-z9fr4w64kk.gz
+/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/compressed/eusmr96iyl-ppyu591u5z.gz
+/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/compressed/n6conud0rh-h45aj5iuvm.gz
+/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/Debug/net9.0/compressed/emlgxkiyv5-kof9qark4b.gz
