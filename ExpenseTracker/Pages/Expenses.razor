@@ -1,0 +1,38 @@
+@page "/expenses"
+@using ExpenseTracker.Models
+@using ExpenseTracker.Services
+@inject FirebaseService Firebase
+
+<h3>Expense Tracker</h3>
+
+<ul>
+    @foreach (var expense in expenses)
+    {
+        <li>@expense.CreatedAt.ToShortDateString() - @expense.Title - $@expense.Amount - @expense.Category</li>
+    }
+</ul>
+
+<button @onclick="AddSample">Add Sample Expense</button>
+
+@code {
+    private List<Expense> expenses = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        expenses = await Firebase.GetExpensesAsync();
+    }
+
+    private async Task AddSample()
+    {
+        var newExp = new Expense
+        {
+            Title = "Coffee",
+            Amount = 4.5m,
+            Category = "Food",
+            CreatedAt = DateTime.Now
+        };
+
+        await Firebase.AddExpenseAsync(newExp);
+        expenses.Add(newExp);
+    }
+}
