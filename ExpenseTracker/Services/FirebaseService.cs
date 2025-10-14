@@ -20,7 +20,7 @@ public class FirebaseService
         {
             Title = d.Fields.title.StringValue ?? "Untitled",
             Amount = decimal.Parse(d.Fields.amount.IntegerValue ?? "0"),
-            Category = d.Fields.category.StringValue ?? "No category",
+            Category = d.Fields.category.StringValue ?? "",
             CreatedAt = DateTime.Parse(d.Fields.createdAt.TimestampValue ?? DateTime.Now.ToString())
         }).ToList() ?? new List<Expense>();
     }
