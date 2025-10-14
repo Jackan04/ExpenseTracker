@@ -1,0 +1,25 @@
+@page "/add-expenses"
+@using ExpenseTracker.Models
+@using ExpenseTracker.Services
+<h3>Add expense</h3>
+<input @bind="expense.Title" placeholder="Title"/>
+<br/>
+<textarea @bind="expense.Category" placeholder="Category"></textarea>
+<br/>
+<input type="number" @bind="expense.Amount" placeholder="Amount"/>
+<br />
+<button @onclick="SaveExpense">Add</button>
+
+
+
+@code {
+    private Expense expense = new();
+    [Inject] private FirebaseService _firebaseService { get; set; }
+
+    private async Task SaveExpense()
+    {
+        expense.CreatedAt = DateTime.UtcNow;
+        await _firebaseService.AddExpenseAsync(expense);
+        expense = new Expense();
+    }
+}

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/ExpenseTracker.csproj": {}
+    "/Users/gabrielthulin/RiderProjects/ExpenseTracker/ExpenseTracker/ExpenseTracker.csproj": {}
   },
   "projects": {
-    "/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/ExpenseTracker.csproj": {
+    "/Users/gabrielthulin/RiderProjects/ExpenseTracker/ExpenseTracker/ExpenseTracker.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/ExpenseTracker.csproj",
+        "projectUniqueName": "/Users/gabrielthulin/RiderProjects/ExpenseTracker/ExpenseTracker/ExpenseTracker.csproj",
         "projectName": "ExpenseTracker",
-        "projectPath": "/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/ExpenseTracker.csproj",
-        "packagesPath": "/Users/jacob/.nuget/packages/",
-        "outputPath": "/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/obj/",
+        "projectPath": "/Users/gabrielthulin/RiderProjects/ExpenseTracker/ExpenseTracker/ExpenseTracker.csproj",
+        "packagesPath": "/Users/gabrielthulin/.nuget/packages/",
+        "outputPath": "/Users/gabrielthulin/RiderProjects/ExpenseTracker/ExpenseTracker/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/jacob/.nuget/NuGet/NuGet.Config"
+          "/Users/gabrielthulin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -37,8 +37,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
+        }
       },
       "frameworks": {
         "net9.0": {
@@ -53,16 +52,20 @@
               "target": "Package",
               "version": "[9.0.8, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.9, )"
+            },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.8, )",
+              "version": "[9.0.9, )",
               "autoReferenced": true
             },
             "Microsoft.NET.Sdk.WebAssembly.Pack": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.8, )",
+              "version": "[9.0.9, )",
               "autoReferenced": true
             }
           },
@@ -80,7 +83,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
-              "version": "[9.0.8, 9.0.8]"
+              "version": "[9.0.9, 9.0.9]"
             }
           ],
           "frameworkReferences": {
@@ -88,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/gabrielthulin/.dotnet/sdk/9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
