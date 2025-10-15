@@ -1,61 +1,62 @@
 ﻿@using ExpenseTracker.Models
 @using ExpenseTracker.Services
-<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">ExpenseTracker</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
+
+<div class="nav-header">
+    <h2><a class="app-title" href="">Expense Tracker</a></h2>
+
+    <button
+        title="Navigation menu"
+        class="menu-toggle"
+        @onclick="ToggleNavMenu"
+        aria-expanded="@(!collapseNavMenu).ToString().ToLower()"
+        aria-controls="main-nav"
+    >
+        <img src="icons/hamburger.svg" alt="Menu" class="icon" />
+    </button>
 </div>
 
-<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
-    <nav class="nav flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="">
-                <img src="icons/bill.svg" alt="Bill" class="icon"/> All Expenses
-            </NavLink>
-        </div>
-        
-        <div class="nav-item px-3">
-            <NavLink class="nav-link add-expense-btn" href="addExpense">
-                <img src="icons/plus.svg" alt="Add" class="icon" /> Add Expense
-            </NavLink>
-        </div>
-        <br/>
-        @foreach (var category in categories)
-        {
-            <div class="nav-item px-3">
-            <NavLink class="nav-link" href="@($"/category/{category.Name}")">
-                @category.Name Expenses
-            </NavLink>
+<div id="main-nav" class="nav-container @NavMenuCssClass">
+    <nav class="nav-list">
+        <div class="nav-buttons">
+            <div class="add-btn button">
+                <a href="addExpense">
+                    <img src="icons/plus.svg" alt="Add" class="icon icon-add" /> 
+                    Expense
+                </a>
             </div>
-        }
+
+            <div class="add-btn button">
+                <a href="addCategory">
+                    <img src="icons/plus.svg" alt="Add" class="icon icon-add" /> 
+                    Category
+                </a>
+            </div>
+        </div>
+        <div>
+        <a href="" class="nav-item">
+            <img src="icons/bill.svg" alt="Bill" class="icon"/> All Expenses
+        </a>
+
+
+        </div>
+
+        <div class="navbar-categories">
+            <h3 class="nav-section-heading">Categories</h3>
+            @foreach (var category in categories)
+            {
+                <a class="nav-item" href="@($"/category/{category.Name}")">
+                    @category.Name Expenses
+                </a>
+            }
+        </div>
     </nav>
 </div>
 
-<style>
-    .add-expense-btn {
-    background-color: #0a53be ;
-        color: white;
-    }
-    
-    .add-expense-btn:hover {
-        background-color: #0a58ca;
-    }
-    
-    .add-expense-btn {
-        filter: brightness(1.4) saturate(1.2);
-    }
-    
-    
-    
-</style>
-
 @code {
+    // true = collapsed/hidden on small screens
     private bool collapseNavMenu = true;
-
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+    
+    private string NavMenuCssClass => collapseNavMenu ? "collapsed" : "expanded";
 
     private void ToggleNavMenu()
     {
@@ -69,5 +70,4 @@
     {
         categories = await FirebaseCategory.GetCategoriesAsync();
     }
-
 }

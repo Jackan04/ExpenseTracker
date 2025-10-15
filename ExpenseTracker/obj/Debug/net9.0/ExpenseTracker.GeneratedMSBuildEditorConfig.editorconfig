@@ -13,41 +13,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = ExpenseTracker
 build_property.RootNamespace = ExpenseTracker
-build_property.ProjectDir = /Users/gabrielthulin/RiderProjects/ExpenseTrackerProj/ExpenseTracker/
+build_property.ProjectDir = /Users/jacob/Developer/ExpenseTracker/ExpenseTracker/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/gabrielthulin/RiderProjects/ExpenseTrackerProj/ExpenseTracker
+build_property.MSBuildProjectDirectory = /Users/jacob/Developer/ExpenseTracker/ExpenseTracker
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[/Users/gabrielthulin/RiderProjects/ExpenseTrackerProj/ExpenseTracker/App.razor]
+[/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gabrielthulin/RiderProjects/ExpenseTrackerProj/ExpenseTracker/Pages/AddExpense.razor]
+[/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/Pages/AddCategory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkQ2F0ZWdvcnkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/Pages/AddExpense.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQWRkRXhwZW5zZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gabrielthulin/RiderProjects/ExpenseTrackerProj/ExpenseTracker/Pages/CategoryExpenses.razor]
+[/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/Pages/CategoryExpenses.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2F0ZWdvcnlFeHBlbnNlcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gabrielthulin/RiderProjects/ExpenseTrackerProj/ExpenseTracker/Pages/Expenses.razor]
+[/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/Pages/Expenses.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXhwZW5zZXMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/gabrielthulin/RiderProjects/ExpenseTrackerProj/ExpenseTracker/_Imports.razor]
+[/Users/jacob/Developer/ExpenseTracker/ExpenseTracker/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/gabrielthulin/RiderProjects/ExpenseTrackerProj/ExpenseTracker/Layout/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-s6u9aid89q
-
-[/Users/gabrielthulin/RiderProjects/ExpenseTrackerProj/ExpenseTracker/Layout/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L05hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-gvdro6ryp7

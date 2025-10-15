@@ -1,5 +1,224 @@
-html, body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+:root{
+    --blue-light: #CCDEFC;
+    --blue-dark: #3984F2;
+    --red-dark: #A30D30;
+    --red-light: #FACDD7;
+    --green-light: #D5F5D9;
+    --green-dark: #2F943B;
+    --text-primary: #1E1E1E;
+    --subtext-color: #6B7280;
+    --background: #FFFFFF;
+    --sidebar: #E5E7EB;
+    --border: #CCCCCC;
+    --grey-light: #F0F0F2;
+    --grey-dark: #868A8B;
+
+    --subtext: 0.875rem;
+    --body: 1rem;
+    --heading: 1.5rem;
+    --title: 1.75rem;
+
+    --padding-small: 1rem;
+    --padding-medium: 1.2rem;
+    --padding-large: 1.5rem;
 }
 
-.icon { width:24px; height:24px; vertical-align:middle; }
+
+*, html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    flex: 1;
+}
+
+.main-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: auto 3fr;
+}
+
+p, button, input, select, textarea {
+    font-size: var(--body);
+    color: var(--text-primary);
+}
+
+.nav-item{
+    font-size: var(--body);
+    font-weight: 500;
+}
+
+h2, h3{
+    font-size: var(--heading);
+    color: var(--text-primary);
+}
+
+h1{
+    font-size: var(--title);
+    color: var(--text-primary);
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+.app-title{
+    
+    color: var(--text-primary);
+}
+
+.icon { 
+    width:24px; 
+    height:24px; 
+    vertical-align:middle;
+    color: currentColor;
+}
+
+.icon-add{
+    fill: var(--blue-dark) !important;
+    color: var(--blue-dark) !important;
+}
+
+.menu-toggle{
+    display: none;
+    background: none;
+    border: none;
+}
+
+.button{
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    align-items: center;
+    font-weight: 500;
+}
+.add-btn {
+    background-color: var(--blue-light);
+    color: var(--blue-dark) !important;
+    gap: 0.5rem;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-large);
+    height: 100vh;
+    background-color: var(--grey-light);
+}
+
+.nav-buttons{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: var(--padding-small);
+    width: 100%;
+}
+
+.nav-section-heading{
+    color: var(--grey-dark);
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.navbar-categories{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--grey-light);
+
+}
+
+.nav-container {
+  display: block;
+  transition: max-height 240ms ease, opacity 180ms ease;
+}
+
+.nav-container.collapsed {
+  max-height: 100vh;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.nav-container.expanded {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+.nav-list .nav-item,
+.nav-list .add-btn a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+
+@media (max-width: 768px) {
+    .menu-toggle{
+        display: inline-flex;
+        background-color: transparent;
+        border: none;
+    }
+    
+    .nav-container.collapsed {
+        max-height: 0 !important;
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    .nav-container.expanded {
+        display: block;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: var(--background);
+        z-index: 55;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        max-height: calc(100vh - 56px);
+        overflow-y: auto;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
+    .page {
+        grid-template-columns: 1fr;
+    }
+    .nav-header {
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+        padding: var(--padding-small);
+        width: 100%;
+        background: var(--grey-light);
+    }
+
+    .navbar {
+        height: auto;
+        padding: 0;
+        background: transparent;
+    }
+}
+
