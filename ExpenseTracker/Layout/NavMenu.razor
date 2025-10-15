@@ -1,4 +1,6 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@using ExpenseTracker.Models
+@using ExpenseTracker.Services
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">ExpenseTracker</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
@@ -14,8 +16,41 @@
                 <img src="icons/bill.svg" alt="Bill" class="icon"/> All Expenses
             </NavLink>
         </div>
+        
+        <div class="nav-item px-3">
+            <NavLink class="nav-link add-expense-btn" href="addExpense">
+                <img src="icons/plus.svg" alt="Add" class="icon" /> Add Expense
+            </NavLink>
+        </div>
+        <br/>
+        @foreach (var category in categories)
+        {
+            <div class="nav-item px-3">
+            <NavLink class="nav-link" href="@($"/category/{category.Name}")">
+                @category.Name Expenses
+            </NavLink>
+            </div>
+        }
     </nav>
 </div>
+
+<style>
+    .add-expense-btn {
+    background-color: #0a53be ;
+        color: white;
+    }
+    
+    .add-expense-btn:hover {
+        background-color: #0a58ca;
+    }
+    
+    .add-expense-btn {
+        filter: brightness(1.4) saturate(1.2);
+    }
+    
+    
+    
+</style>
 
 @code {
     private bool collapseNavMenu = true;
@@ -25,6 +60,14 @@
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
+    }
+
+    private List<Category> categories = new();
+    [Inject] private FirebaseCategoryService FirebaseCategory { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        categories = await FirebaseCategory.GetCategoriesAsync();
     }
 
 }

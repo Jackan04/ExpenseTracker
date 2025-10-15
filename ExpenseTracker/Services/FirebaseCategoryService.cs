@@ -1,4 +1,5 @@
 using ExpenseTracker.Models;
+using ExpenseTracker.Data;
 
 namespace ExpenseTracker.Services;
 using System.Net.Http.Json;
@@ -36,26 +37,26 @@ public class FirebaseCategoryService
         await _http.PostAsJsonAsync(_baseUrl, doc);
     }
 
-    // Models for Firestore response
-    public class FirestoreResponse
-    {
-        public List<FirestoreDocument>? Documents { get; set; }
-    }
-
-    public class FirestoreDocument
-    {
-        public FirestoreFields Fields { get; set; } = new();
-    }
-
-    public class FirestoreFields
-    {
-        public FirestoreValue name { get; set; } = new();
-        public FirestoreValue createdAt { get; set; } = new();
-    }
-
-    public class FirestoreValue
-    {
-        public string? StringValue { get; set; }
-        public string? TimestampValue { get; set; }
-    }
+   //Models for Firestore response
+   public class FirestoreResponse
+   {
+       public List<FirestoreDocument>? Documents { get; set; }
+   }
+   
+   public class FirestoreDocument
+   {
+       public FirestoreFields Fields { get; set; } = new();
+   }
+   
+   public class FirestoreFields
+   {
+       public FirestoreValue name { get; set; } = new();
+       public FirestoreValue createdAt { get; set; } = new();
+   }
+   
+   public class FirestoreValue
+   {
+       public string? StringValue { get; set; }
+       public string? TimestampValue { get; set; }
+   }
 }

@@ -1,0 +1,58 @@
+@page "/addExpense"
+@using ExpenseTracker.Services
+@using ExpenseTracker.Models
+@using ExpenseTracker.Services
+@inject FirebaseService Firebase
+@inject FirebaseCategoryService FirebaseCategory
+
+<h3>Add Expense</h3>
+
+<EditForm Model="newExpense" OnValidSubmit="AddNewExpense">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="form-group">
+        <label>Title</label>
+        <InputText class="form-control" @bind-Value="newExpense.Title" />
+    </div>
+
+    <div class="form-group">
+        <label>Amount</label>
+        <InputNumber class="form-control" @bind-Value="newExpense.Amount" />
+    </div>
+
+    <div class="form-group">
+        <label>Category</label>
+        <InputSelect class="form-control" @bind-Value="newExpense.Category">
+            @foreach (var category in categories)
+            {
+            <option>@category.Name</option>
+            }
+        </InputSelect>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-2">Add Expense</button>
+</EditForm>
+
+
+
+@code {
+    private Expense newExpense = new();
+    private List<Category> categories = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        categories = await FirebaseCategory.GetCategoriesAsync();
+    }
+
+    private async Task AddNewExpense()
+    {
+        newExpense.CreatedAt = DateTime.Now;
+        await Firebase.AddExpenseAsync(newExpense);
+
+      
+        
+        newExpense = new(); // reset form
+    }
+    
+}
